@@ -1,26 +1,23 @@
 import React from "react";
-
+import Cajas from "./cajas.jsx";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+const SecondsCounter = () => {
+	return(
+	<div className="Counter">
+		
+		<div className="Icono badge bg-secondary width: 140px;"><i class="fa fa-clock"></i></div>
+		<div className="p-3 mb-2 bg-primary text-white"></div>
+		
+		
+
+	</div>
+	
+		
+	
+	);	
 };
 
-export default Home;
+export default SecondsCounter; 
