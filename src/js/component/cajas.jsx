@@ -1,19 +1,19 @@
 import React from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
+
 
 //create your first component
-const Cajas = () => {
-	return(
-<div>0   0  0   0   0
-
-
-	</div>
+const Cajas = (props) => {
+	const html = props.nums.map(myFunction)
+	function myFunction(t,i){
+		return(<div className="badge bg-secondary" key={i}>{t}</div> )
+	}
+	console.log(html);
+	return (
+		[html]
 	
-		
-	
-	);	
+	);
 };
 
-export default Cajas; 
+export default Cajas;
